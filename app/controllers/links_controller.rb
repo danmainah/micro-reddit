@@ -1,5 +1,6 @@
 class LinksController < ApplicationController
   before_action :set_link, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!, except: [:index, :show]
 
   # GET /links or /links.json
   def index
@@ -12,7 +13,7 @@ class LinksController < ApplicationController
 
   # GET /links/new
   def new
-    @link = Link.new
+    @link = current_user.links.build
   end
 
   # GET /links/1/edit
@@ -21,7 +22,7 @@ class LinksController < ApplicationController
 
   # POST /links or /links.json
   def create
-    @link = Link.new(link_params)
+    @link = current_user.links.build(link_params)
 
     respond_to do |format|
       if @link.save
