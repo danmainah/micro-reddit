@@ -11,10 +11,11 @@
   </head>
 
   <body>
-   <header class="navbar navbar-default" role="navigation">
-     <div class="navbar-inner">
-       <div class="container">
-           <div id="logo" class="navbar-brand"><%= link_to "Reddit", root_path %></div>
+   <header class="navbar navbar-default  " role="navigation">
+     <div class="navbar-inner bg-info">
+       <div class="container flex">
+           <div id="logo" class="navbar-brand text-danger navbar-left"><%= link_to "Mine-Reddit", root_path %></div>
+             <div class=" navbar-brand d-flex align-items-center"> <input type="text" placeholder="Search..">  </div>
               <nav class="collapse navbar-collapse navbar-ex1-collapse">
                 <% if user_signed_in? -%>
                <ul class="nav navbar-nav navbar-right">
@@ -28,6 +29,7 @@
                   <li><%= link_to 'Sign in', new_user_session_path %></li>
                </ul>
                <% end -%>
+             
               </nav>
        </div>
      </div>
@@ -36,7 +38,7 @@
        <% flash.each do |name, msg| %>
         <%= content_tag(:div, msg, class: "alert alert-info") %>
       <% end %>
-        <div id="content" class="col-md-9 center-block">
+        <div id="content" class="col-md-6 center-block">
            <%= yield %>
         </div>
    </div>
