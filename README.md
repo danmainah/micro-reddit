@@ -10,6 +10,9 @@ This is a rails project that replicates how reddit apps function.It test the MVC
 
 [Live Demo Link](https://solai-reddit.herokuapp.com/)
 
+![screencapture-solai-reddit-herokuapp-2021-11-26-16_00_49](https://user-images.githubusercontent.com/61408860/143585065-6f6905b9-ced2-43d8-a723-3d5f42fcaec3.png)
+
+
 ## Getting Started
 
 - Ensure you have rails installed by running 'rails -v'.
