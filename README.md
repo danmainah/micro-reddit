@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/Rails-maroon)
+
 # micro-reddit
 This is a rails project that replicates how reddit apps function.It test the MVC structure implementation in rails.It also test Building using   active records.
 
