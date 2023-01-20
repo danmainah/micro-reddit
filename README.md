@@ -24,7 +24,7 @@ This is a rails project that replicates how reddit apps function.It test the MVC
 - Run 'rails server' to spin up a development server
 - Once the server is up, open this link 'http://127.0.0.1:3000' on your browser
 
-
+<h3><b>Author</b></h3>
 
 ## 👤 **Daniel maina**
 
